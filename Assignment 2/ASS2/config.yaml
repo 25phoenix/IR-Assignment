@@ -1,0 +1,25 @@
+{
+  "languages": ["english", "hindi", "arabic"],
+  "seed": 42,
+  "vocab_sizes_demo": [32, 64, 128],
+  "vocab_sizes_full": [256, 512, 1024, 2048, 4096],
+  "stability_metric": "js_divergence",
+  "thresholds":
+    {
+      "relative_efficiency_gain": 0.05,
+      "js_divergence": 0.05,
+      "zipf_delta": 0.05,
+      "r2_delta": 0.02,
+    },
+  "fit_min_rank": 2,
+  "fit_max_rank": null,
+  "max_chars_demo": 12000,
+  "max_chars_full": 200000,
+  "download_full_wikipedia": false,
+  "pretrained_tokenizers":
+    {
+      "llama": "hf-internal-testing/llama-tokenizer",
+      "qwen": "Qwen/Qwen2.5-0.5B",
+      "kimi": "moonshotai/Kimi-K2-Instruct",
+    },
+}
