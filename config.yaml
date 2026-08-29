@@ -1,0 +1,43 @@
+seed: 42
+languages:
+  - english
+  - hindi
+  - arabic
+
+download_wikipedia: true
+max_chars_demo: 20000
+max_chars_full: 150000
+train_val_split: 0.8
+
+vocab_sizes_demo:
+  - 64
+  - 128
+  - 256
+  - 512
+  - 1024
+
+vocab_sizes_full:
+  - 256
+  - 512
+  - 1024
+  - 2048
+  - 4096
+  - 8192
+  - 16384
+
+fit_min_rank: 2
+fit_max_rank: null
+stability_metric: js_divergence
+
+thresholds:
+  relative_efficiency_gain: 0.03
+  js_divergence: 0.05
+  zipf_delta: 0.05
+  r2_delta: 0.02
+  marginal_elasticity: 0.10
+
+pretrained_tokenizers:
+  llama: hf-internal-testing/llama-tokenizer
+  qwen: Qwen/Qwen2.5-0.5B
+  deepseek: deepseek-ai/deepseek-llm-7b-base
+  gpt2: openai-community/gpt2
